@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet"
+        href="@import url('https://fonts.googleapis.com/css2?family=Madimi+One&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');">
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        font-family: 'Jost', sans-serif;
+        background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+    }
+
+    .main {
+        width: 30rem;
+        height: 30rem;
+        background: #666;
+        overflow: hidden;
+        background: url() no-repeat center / cover;
+        border-radius: 10%;
+        box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .9);
+    }
+
+    #chk {
+        display: none;
+
+    }
+
+    .signup {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+
+    label {
+        color: #fff;
+        font-size: 2.3rem;
+        justify-content: center;
+        display: flex;
+        margin: 60px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: .5s ease-in-out;
+    }
+
+    input {
+        width: 60%;
+        height: 20px;
+        background: #e0dede;
+        justify-content: center;
+        display: flex;
+        margin: 20px auto;
+        padding-top: 10px;
+        border: none;
+        outline: none;
+        border-radius: .3rem;
+    }
+
+    input:focus {
+        border: .1rem solid black;
+    }
+
+    button {
+        width: 60%;
+        height: 40px;
+        margin: 10px auto;
+        justify-content: center;
+        display: block;
+        color: #fff;
+        background: #192a56;
+        font-size: 1rem;
+        font-weight: bold;
+        margin-top: 20px;
+        outline: none;
+        border: none;
+        border-radius: .3rem;
+        transition: .2s ease-in;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background: #27ae60;
+    }
+
+    .login {
+        height: 460px;
+        background: #eee;
+        border-radius: 50%;
+        transform: translateY(-220px);
+        transition: .8s ease-in-out;
+    }
+
+    .login label {
+        color: #192a56;
+        transform: scale(.8);
+
+    }
+
+    #chk:checked~.login {
+        transform: translateY(-590px);
+    }
+
+    #chk:checked~.login label {
+        transform: scale(1);
+    }
+
+    #chk:checked~.signup label {
+        transform: scale(.8);
+    }
+</style>
+
+<body>
+    <div class="main">
+        <input type="checkbox" id="chk" aria-hidden="true">
+
+        <div class="signup">
+            <form action="">
+                <label for="chk" aria-hidden="true">
+                    Sign Up
+                </label>
+                <input type="text" name="txt" placeholder="UserName" required="">
+                <input type="email" name="email" placeholder="Email" required="">
+                <input type="password" name="pswd" placeholder="Password" required="">
+                <button>Sign Up</button>
+            </form>
+        </div>
+        <div class="login">
+            <form action="">
+                <label for="chk" aria-hidden="true">Login</label>
+                <input type="email" name="email" placeholder="Email" required="">
+                <input type="password" name="pswd" placeholder="Password" required="">
+                <button>Login</button>
+            </form>
+        </div>
+    </div>
+
+
+
+
+    <!-- script section  -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="script.js"></script>
+    
+
+
+</body>
+
+</html>

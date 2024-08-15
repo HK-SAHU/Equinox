@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equinox</title>
+    <!-- fontawesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- slider link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <a href="#" class="logo"><i class="fa-solid fa-crown"></i>Equinox.</a>
+
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="index.html">Collection</a>
+            <a href="shop.html">Shop</a>
+            <a href="AboutUs.html">About</a>
+            <a href="Contact.html">Contact</a>
+            <a href="login.html">Login</a>
+        </nav>
+        <div class="icons">
+            <i class="fas fa-bars" id="menu-bars"></i>
+            <i class="fas fa-search" id="search-icon"></i>
+            
+            <a href="#" class="fas fa-shopping-cart"></a>
+        </div>
+
+        <!-- cart section  -->
+        <div class="cart">
+            <h2 class="cart-title">Shopping Cart</h2>
+            <div class="cart-content">
+                <div class="cart-box">
+                    <!-- <img src="img/winters1-removebg-preview.png" alt="" class="cart-image">
+                    <div class="detail-box">
+                        <div class="cart-product-title">Formal Sweater</div>
+                        <div class="cart-price">₹1119</div>
+                        <input type="number" value="1" class="cart-quantity">
+                    </div>
+                    
+                    <i class="fa-solid fa-trash-can cart-remove"></i> -->
+                </div>
+            </div>
+            <div class="total">
+                <div class="total-tile">Total</div>
+                <div class="total-price">₹0</div>
+            </div>
+
+            <button type="button" class="btn buy-btn">Buy Now</button>
+            <!-- cart close  -->
+            <i class="fa-solid fa-xmark" id="close-cart"></i>
+        </div>
+
+    </header>
+
+    <!-- search form -->
+
+    <form action="" id="search-form">
+        <input type="search" placeholder="Search here.." name="" id="search-box">
+        <label for="search-box" class="fas fa-search"></label>
+        <i class="fa-solid fa-xmark" id="close"></i>
+    </form>
+
+
+    <!-- main shop  -->
+
+    <section class="collection" id="collection">
+        <h3 class="sub-heading" style="padding-top: 5rem;padding-bottom: 3rem;">Select Whatever You Like</h3>
+        <div class="box-container">
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="img/shop1.jpg" alt="" class="product-image" style="height: 60%;width: 50%;">
+                <h3 class="product-title">Embroidered Lehenga Choli</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="proce">
+                    <span>₹3290</span>
+                </div>
+                <button class="btn add-to-cart">Add To Cart</button>
+                <!-- <a href="#" class="btn">Add to Cart</a> -->
+            </div>
+
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="img/shop2.jpg" alt="" class="product-image" style="height: 60%;width: 70%;">
+                <h3 class="product-title">Men's French Woolen Coat</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <div class="proce">
+                    <span>₹2199</span>
+                </div>
+                <button class="btn add-to-cart">Add To Cart</button>
+                <!-- <a href,="#" class="btn">Add to Cart</a> -->
+            </div>
+
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="img/shop3.jpg" alt="" class="product-image" style="height: 60%;width: 60%;">
+                <h3 class="product-title">Lymio Men Cargo </h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="proce">
+                    <span>₹649</span>
+                </div>
+                <button class="btn add-to-cart">Add To Cart</button>
+                <!-- <a href="#" class="btn">Add to Cart</a> -->
+            </div>
+
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="img/shop4.jpg" alt="" class="product-image" style="height: 60%;width: 60%;">
+                <h3 class="product-title">Wedding Lehnga</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <div class="proce">
+                    <span>₹6095</span>
+                </div>
+                <button class="btn add-to-cart">Add To Cart</button>
+                <!-- <a href="#" class="btn">Add to Cart</a> -->
+            </div>
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="img/shop5.jpg" alt="" class="product-image" style="height: 60%;width: 60%;">
+                <h3 class="product-title">Flower Printed Frok</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <div class="proce">
+                    <span>₹315</span>
+                </div>
+                <button class="btn add-to-cart">Add To Cart</button>
+                <!-- <a href="#" class="btn">Add to Cart</a> -->
+            </div>
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="img/shop6.jpg" alt="" class="product-image" style="height: 60%;width: 70%;">
+                <h3 class="product-title">Denim Jacket</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="proce">
+                    <span>₹999</span>
+                </div>
+                <button class="btn add-to-cart">Add To Cart</button>
+                <!-- <a href="#" class="btn">Add to Cart</a> -->
+            </div>
+
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="img/shop7.jpg" alt="" class="product-image" style="height: 60%;width: 70%;">
+                <h3 class="product-title">Woolen Hoody with Hoody Neck</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <div class="proce">
+                    <span>₹999</span>
+                </div>
+                <button class="btn add-to-cart">Add To Cart</button>
+                <!-- <a href="#" class="btn">Add to Cart</a> -->
+            </div>
+
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="img/winter8-removebg-preview.png" alt="" class="product-image" style="height: 60%;width: 60%;">
+                <h3 class="product-title">Casual Sweater for women</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="proce">
+                    <span>₹749</span>
+                </div>
+                <button class="btn add-to-cart">Add To Cart</button>
+                <!-- <a href="#" class="btn">Add to Cart</a> -->
+            </div>
+        </div>
+
+
+
+        <!-- 2nd section  -->
+        <div class="box-container">
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="img/shop9.jpg" alt="" class="product-image" style="height: 60%;width: 60%;">
+                <h3 class="product-title">Drop Shoulder SweatShirt</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="proce">
+                    <span>₹349</span>
+                </div>
+                <button class="btn add-to-cart">Add To Cart</button>
+                <!-- <a href="#" class="btn">Add to Cart</a> -->
+            </div>
+
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="img/winter2-removebg-preview.png" alt="" class="product-image" style="height: 60%;width: 70%;">
+                <h3 class="product-title">Long Coat for Men</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <div class="proce">
+                    <span>₹2999</span>
+                </div>
+                <button class="btn add-to-cart">Add To Cart</button>
+                <!-- <a href,="#" class="btn">Add to Cart</a> -->
+            </div>
+
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="img/winter3-removebg-preview.png" alt="" class="product-image" style="height: 60%;width: 70%;">
+                <h3 class="product-title">Jacket</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="proce">
+                    <span>₹1099</span>
+                </div>
+                <button class="btn add-to-cart">Add To Cart</button>
+                <!-- <a href="#" class="btn">Add to Cart</a> -->
+            </div>
+
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="img/winter4-removebg-preview.png" alt="" class="product-image" style="height: 60%;width: 70%;">
+                <h3 class="product-title">Grey Jacket</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <div class="proce">
+                    <span>₹1299</span>
+                </div>
+                <button class="btn add-to-cart">Add To Cart</button>
+                <!-- <a href="#" class="btn">Add to Cart</a> -->
+            </div>
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="img/winter5-removebg-preview.png" alt="" class="product-image" style="height: 60%;width: 70%;">
+                <h3 class="product-title">Jacket For Women</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <div class="proce">
+                    <span>₹1299</span>
+                </div>
+                <button class="btn add-to-cart">Add To Cart</button>
+                <!-- <a href="#" class="btn">Add to Cart</a> -->
+            </div>
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="img/winter6-removebg-preview.png" alt="" class="product-image" style="height: 60%;width: 70%;">
+                <h3 class="product-title">Long Coat For Women</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="proce">
+                    <span>₹2749</span>
+                </div>
+                <button class="btn add-to-cart">Add To Cart</button>
+                <!-- <a href="#" class="btn">Add to Cart</a> -->
+            </div>
+
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="img/winter7-removebg-preview.png" alt="" class="product-image" style="height: 60%;width: 70%;">
+                <h3 class="product-title">Leather Jacket For Women</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <div class="proce">
+                    <span>₹3199</span>
+                </div>
+                <button class="btn add-to-cart">Add To Cart</button>
+                <!-- <a href="#" class="btn">Add to Cart</a> -->
+            </div>
+
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="img/men1-removebg-preview.png" alt=""  class="product-image" style="height: 60%;width: 60%;">
+                <h3 class="product-title">Casual Shirt</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="proce">
+                    <span>₹349</span>
+                </div>
+                <button class="btn add-to-cart">Add To Cart</button>
+                <!-- <a href="#" class="btn">Add to Cart</a> -->
+            </div>
+        </div>
+
+
+        <!-- 3rd section  -->
+        <div class="box-container">
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="img/men3-removebg-preview.png" alt="" class="product-image" style="height: 60%;width: 70%;">
+                <h3 class="product-title">Fromal Sweater</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="proce">
+                    <span>₹1119</span>
+                </div>
+                <button class="btn add-to-cart">Add To Cart</button>
+                <!-- <a href="#" class="btn">Add to Cart</a> -->
+            </div>
+
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="img/men4-removebg-preview.png" alt="" class="product-image" style="height: 60%;width: 70%;">
+                <h3 class="product-title">Long Coat for Men</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <div class="proce">
+                    <span>₹899</span>
+                </div>
+                <button class="btn add-to-cart">Add To Cart</button>
+                <!-- <a href,="#" class="btn">Add to Cart</a> -->
+            </div>
+
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="img/women6.jpg" alt="" class="product-image" style="height: 60%;width: 70%;">
+                <h3 class="product-title">Pink Frok</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="proce">
+                    <span>₹1099</span>
+                </div>
+                <button class="btn add-to-cart">Add To Cart</button>
+                <!-- <a href="#" class="btn">Add to Cart</a> -->
+            </div>
+
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="img/women8.jpg" alt="" class="product-image" style="height: 60%;width: 70%;">
+                <h3 class="product-title">Formal TopFor Women</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <div class="proce">
+                    <span>₹849</span>
+                </div>
+                <button class="btn add-to-cart">Add To Cart</button>
+                <!-- <a href="#" class="btn">Add to Cart</a> -->
+            </div>
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="img/men7-removebg-preview.png" alt="" class="product-image" style="height: 60%;width: 70%;">
+                <h3 class="product-title">Formal Coat</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <div class="proce">
+                    <span>₹4999</span>
+                </div>
+                <button class="btn add-to-cart">Add To Cart</button>
+                <!-- <a href="#" class="btn">Add to Cart</a> -->
+            </div>
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="img/women7.jpg" alt="" class="product-image" style="height: 60%;width: 70%;">
+                <h3 class="product-title">Short Kurti</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="proce">
+                    <span>₹699</span>
+                </div>
+                <button class="btn add-to-cart">Add To Cart</button>
+                <!-- <a href="#" class="btn">Add to Cart</a> -->
+            </div>
+
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="img/1st_pro-removebg-preview.png" alt="" class="product-image" style="height: 60%;width: 70%;">
+                <h3 class="product-title">Best In Quality</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <div class="proce">
+                    <span>₹1,119</span>
+                </div>
+                <button class="btn add-to-cart">Add To Cart</button>
+                <!-- <a href="#" class="btn">Add to Cart</a> -->
+            </div>
+
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="img/2nd pro.jpg" alt="" class="product-image" style="height: 60%;width: 60%;">
+                <h3 class="product-title">Beach Shirt</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="proce">
+                    <span>₹1119</span>
+                </div>
+                <button class="btn add-to-cart">Add To Cart</button>
+                <!-- <a href="#" class="btn">Add to Cart</a> -->
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+      <!-- footer section  -->
+
+      <section class="footer">
+        <div class="box-container">
+            <div class="box" style="font-size: 1.5rem;">
+                <h3>Contact</h3>
+                <p><strong>Address:</strong>Chitkara University, Chandigarh-Patiala National Highway (NH- 64), Patiala - 140401, Punjab</p>
+                <p><strong>Phone:</strong>+91 9876543210</p>
+                <p><strong>Hours:</strong>10:00 - 18:00 Mon-Sat</p>
+                <div class="follow">
+                    <h4>Follow Us</h4>
+                    <div class="icon">
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-pinterest-p"></i>
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="index.html">Collection</a>
+                <a href="shop.html">Shop</a>
+                <a href="AboutUs.html">About</a>
+                <a href="Contact.html">Contact</a>
+            </div>
+
+            <div class="box" >
+                <h3>My Account</h3>
+                <a href="login.html">Sign In</a>
+                <a href="#iconCart">View Cart</a>
+                <a href="#">My Wishlist</a>
+                <a href="#">Track My Order</a>
+                <a href="#">Help</a>
+            </div>
+
+            <div class="box" style="font-size: 1.5rem;">
+                <h3></h3>
+                <h4>Install App</h4>
+                <p>From App Store or Google Play</p>
+                <div class="row">
+                    <img src="img/appstore.svg" alt="" style="height: 40%;width: 40%; cursor: pointer;">
+                    <img src="img/google play.png" alt="" style="height: 40%;width: 40%;margin-bottom: .6rem; cursor: pointer;">
+                </div>
+                <p>Secured Payment Gateways</p>
+                <img src="img/pay.png" alt="" style="cursor: pointer;">
+            </div>
+        </div>
+
+        <div class="credit">copyright @ 2024 by <span>HKSahu</span></div>
+    </section>
+
+
+
+
+
+
+    <!-- custom js file link  -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

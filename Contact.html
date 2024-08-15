@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equinox</title>
+    <!-- fontawesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- slider link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <a href="#" class="logo"><i class="fa-solid fa-crown"></i>Equinox.</a>
+
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="index.html">Collection</a>
+            <a href="shop.html">Shop</a>
+            <a href="AboutUs.html">About</a>
+            <a href="Contact.html">Contact</a>
+            <a href="login.html">Login</a>
+        </nav>
+        <div class="icons">
+            <i class="fas fa-bars" id="menu-bars"></i>
+            <i class="fas fa-search" id="search-icon"></i>
+            <a href="#" class="fas fa-shopping-cart"></a>
+        </div>
+
+
+        <!-- cart section  -->
+        <div class="cart">
+            <h2 class="cart-title">Shopping Cart</h2>
+            <div class="cart-content">
+                <div class="cart-box">
+                    <!-- <img src="img/winters1-removebg-preview.png" alt="" class="cart-image">
+                    <div class="detail-box">
+                        <div class="cart-product-title">Formal Sweater</div>
+                        <div class="cart-price">₹1119</div>
+                        <input type="number" value="1" class="cart-quantity">
+                    </div>
+                    
+                    <i class="fa-solid fa-trash-can cart-remove"></i> -->
+                </div>
+            </div>
+            <div class="total">
+                <div class="total-tile">Total</div>
+                <div class="total-price">₹0</div>
+            </div>
+
+            <button type="button" class="btn buy-btn">Buy Now</button>
+            <!-- cart close  -->
+            <i class="fa-solid fa-xmark" id="close-cart"></i>
+        </div>
+
+    </header>
+
+    <!-- search form -->
+
+    <form action="" id="search-form">
+        <input type="search" placeholder="Search here.." name="" id="search-box">
+        <label for="search-box" class="fas fa-search"></label>
+        <i class="fa-solid fa-xmark" id="close"></i>
+    </form>
+
+
+
+    <section class="contact" id="contact">
+        <h3 class="sub-heading" style="padding-top: 5rem;">Do You Have Any Query?</h3>
+        <h1 class="heading">Contact Us!</h1>
+        <div class="us">
+            <div class="image">
+                <img src="img/contact.jpg" alt="" style="height: 80%; width: 100%;">
+            </div>
+
+            <form action="">
+                <div class="inputbox">
+                    <div class="input">
+                        <span>Your name</span>
+                        <input type="text" placeholder="Enter Your Name">
+                    </div>
+
+                    <div class="input">
+                        <span>Your number</span>
+                        <input type="number" placeholder="Enter Your number">
+                    </div>
+
+                    <div class="input">
+                        <span>Your Email</span>
+                        <input type="email" placeholder="Enter Your Email">
+                    </div>
+
+                    <div class="input">
+                        <span>Query</span>
+                        <textarea name="" placeholder="Enter Your Query" id="" cols="30" rows="10"></textarea>
+                    </div>
+                </div>
+                <input type="submit" value="Submit" class="btn">
+            </form>
+        </div>
+
+    </section>
+
+
+      <!-- footer section  -->
+
+      <section class="footer">
+        <div class="box-container">
+            <div class="box" style="font-size: 1.5rem;">
+                <h3>Contact</h3>
+                <p><strong>Address:</strong>Chitkara University, Chandigarh-Patiala National Highway (NH- 64), Patiala - 140401, Punjab</p>
+                <p><strong>Phone:</strong>+91 9876543210</p>
+                <p><strong>Hours:</strong>10:00 - 18:00 Mon-Sat</p>
+                <div class="follow">
+                    <h4>Follow Us</h4>
+                    <div class="icon">
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-pinterest-p"></i>
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="index.html">Collection</a>
+                <a href="shop.html">Shop</a>
+                <a href="AboutUs.html">About</a>
+                <a href="Contact.html">Contact</a>
+            </div>
+
+            <div class="box" >
+                <h3>My Account</h3>
+                <a href="login.html">Sign In</a>
+                <a href="#iconCart">View Cart</a>
+                <a href="#">My Wishlist</a>
+                <a href="#">Track My Order</a>
+                <a href="#">Help</a>
+            </div>
+
+            <div class="box" style="font-size: 1.5rem;">
+                <h3></h3>
+                <h4>Install App</h4>
+                <p>From App Store or Google Play</p>
+                <div class="row">
+                    <img src="img/appstore.svg" alt="" style="height: 40%;width: 40%; cursor: pointer;">
+                    <img src="img/google play.png" alt="" style="height: 40%;width: 40%;margin-bottom: .6rem; cursor: pointer;">
+                </div>
+                <p>Secured Payment Gateways</p>
+                <img src="img/pay.png" alt="" style="cursor: pointer;">
+            </div>
+        </div>
+
+        <div class="credit">copyright @ 2024 by <span>HKSahu</span></div>
+    </section>
+
+
+
+
+
+
+    <!-- custom js file link  -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
